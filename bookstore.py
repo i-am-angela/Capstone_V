@@ -1,6 +1,16 @@
 '''
 Bookstore inventory using SQLite database
 Users are able to add, update, delete and search books in the database.
+
+Assignment brief included data from ID 3001 - 3005, table structure and instructions as above.
+
+Design areas of note:
+- User ID was auto incremented through function rather than allow user input to reduce checking
+-- there is an autoincrement function which starts from 1 but cumbersome to implement to start counting from another figure
+- Search was developed to allow user to search via title and author not just ID.
+- Uniqe constraint added to Title and Author combination to avoid duplicate entries
+- print f string format include character spacing for better view and alignment
+
 '''
 
 import sqlite3
